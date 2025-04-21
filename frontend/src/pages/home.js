@@ -12,8 +12,44 @@ const Home = () => {
 
     return (
         <div className="relative overflow-hidden">
-            <div className='bg-sky-300 opacity-80 fixed top-0 left-0 w-screen h-[2000px] z-0'>
+            {/* <div className="fixed top-0 left-0 w-screen h-[2000px] z-0 bg-gradient-to-b from-pink-200 via-sky-200 to-yellow-100 opacity-90 overflow-hidden">
+                <div className="absolute w-24 h-24 bg-pink-300 rounded-full opacity-40 top-20 left-10 animate-float"></div>
+                <div className="absolute w-16 h-16 bg-yellow-300 rounded-full opacity-40 top-96 left-1/3 animate-float delay-200"></div>
+                <div className="absolute w-20 h-20 bg-sky-400 rounded-full opacity-40 top-[600px] left-[60%] animate-float delay-500"></div>
+                <div className="absolute w-14 h-14 bg-purple-300 rounded-full opacity-30 top-[1000px] left-[80%] animate-float delay-1000"></div>
+            </div> */}
+            {/* <div className="pointer-events-none fixed top-0 left-0 w-full h-full z-0 overflow-hidden">
+                {[...Array(10)].map((_, i) => (
+                    <div
+                        key={i}
+                        className="absolute text-pink-400 text-2xl animate-floating"
+                        style={{
+                            left: `${Math.random() * 100}%`,
+                            top: `${Math.random() * 100}%`,
+                            animationDuration: `${6 + Math.random() * 6}s`,
+                            animationDelay: `${Math.random() * 5}s`,
+                        }}
+                    >
+                        🌸
+                    </div>
+                ))}
+            </div> */}
 
+            <div className="pointer-events-none fixed top-0 left-0 w-full h-full z-0 overflow-hidden">
+                {[...Array(20)].map((_, i) => (
+                    <div
+                        key={i}
+                        className="absolute text-pink-400 text-2xl"
+                        style={{
+                            left: `${Math.random() * 100}%`,
+                            top: `${Math.random() * 100}%`,
+                            opacity: 0.3 + Math.random() * 0.3,
+                            transform: `rotate(${Math.random() * 360}deg)`,
+                        }}
+                    >
+                        🌸
+                    </div>
+                ))}
             </div>
 
             <div className='flex justify-center relative z-10 pt-5'>
