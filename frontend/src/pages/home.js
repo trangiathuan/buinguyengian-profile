@@ -12,7 +12,7 @@ const Home = () => {
 
     return (
         <div className="relative overflow-hidden">
-            <div className='bg-sky-300 opacity-100 fixed top-0 left-0 w-screen h-[2000px] z-0'>
+            <div className='bg-sky-300 opacity-80 fixed top-0 left-0 w-screen h-[2000px] z-0'>
 
             </div>
 
